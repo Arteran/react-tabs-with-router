@@ -37,3 +37,21 @@ body {
     transform: rotate(180deg);
   }
 }
+
+.pumpkin-glow {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 2rem;
+  z-index: 10;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 2px rgba(255, 165, 0, 0.4));
+  }
+  to {
+    filter: drop-shadow(0 0 15px rgba(255, 165, 0, 1));
+  }
+}

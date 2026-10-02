@@ -27,6 +27,7 @@ export const Tabs = () => {
       </div>
 
       <div className="block tab-content" data-cy="TabContent">
+        <div className="pumpkin-glow">🎃</div>
         {!Object.keys(tabs).includes(tabsId as string)
           ? 'Please select a tab'
           : tabs[tabsId as keyof typeof tabs]}
